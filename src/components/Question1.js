@@ -9,7 +9,7 @@ const Question1 = () => {
 
   return (
       <>
-        <QuestionBox question={questions.[0].question} setQuestion={setQuestion} />       
+        <QuestionBox question={questions.[0].Question-1} setQuestion={setQuestion} />       
       </>
   );
 };

@@ -26,7 +26,7 @@ return(
         <Route path="/admin" element={<Form />} />
         <Route path="/question/:questionId" element={<Coding />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/question/edit/:subject/:codingQuestion" element={<EditForm />}/>
+        <Route path="/edit/:subject/:codingQuestion" element={<EditForm />}/>
         <Route path="/question/:subject/:codingQuestion" element={<CodingRoute />}/>
         <Route path="/leaderboard/:questionId" element={<Leaderboard />} />
       </Routes>

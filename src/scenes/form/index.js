@@ -53,7 +53,7 @@ const Form = () => {
           }
         };
         await setDoc(subjectRef, updatedData);
-        setLink(`http://localhost:3000/edit/${subject}/CodingQuestion`);
+        setLink(`http://localhost:3000/edit/${subject}/${codingQuestion}`);
       } else {
         // If 'CodingQuestion' document doesn't exist, create it
         await setDoc(subjectRef, {
@@ -185,8 +185,16 @@ const Form = () => {
           </Box>
           {submitted && (
             <Box sx={{ mt: 2 }}>
-              <Typography variant="body1">Your question has been submitted successfully!</Typography>
-              <Link href={link} variant="body2">Click here to view your question</Link>
+      <Typography variant="body1">
+    {link.includes('edit') 
+      ? 'Your question has been updated successfully!' 
+      : 'Your question has been submitted successfully!'}
+  </Typography>
+  <Link href={link} variant="body2">
+    {link.includes('edit') 
+      ? 'Click here to edit your question' 
+      : 'Click here to view your question'}
+  </Link>
             </Box>
           )}
         </Box>

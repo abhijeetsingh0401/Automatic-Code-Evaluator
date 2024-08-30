@@ -46,6 +46,7 @@ const CodingRoute = () => {
   const [showComponent, setShowComponent] = useState(false);
   const [testCases, setTestCases] = useState([]);
   const [theme, setTheme] = useState("cobalt");
+  const [showEvaluateButton, setShowEvaluateButton] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -68,6 +69,8 @@ const CodingRoute = () => {
   };
 
   // Hint for Wrong Code
+
+
   const handlePopupWrongCode = async () => {
     setWrongCodePopupOpen(true);
     setIsLoading(true);
@@ -118,7 +121,6 @@ const CodingRoute = () => {
       throw error;
     }
   };
-
   const closeWrongCodePopup = () => {
     setWrongCodePopupOpen(false);
   };
@@ -435,6 +437,7 @@ const CodingRoute = () => {
       setProcessingTestCases(false);
       setOutputDetailsTestCases(testCaseJsonResult);
       setActiveComponent('outputTestCases');
+      setShowEvaluateButton(true);
     }
   };
 
@@ -535,7 +538,23 @@ const CodingRoute = () => {
           )}
 
           <div className="right-container flex flex-col">
-            <div className="flex flex-row space-x-3 justify-end">
+          <div className="flex flex-row space-x-3 justify-end">
+              {/* Button for hints for wrong code */}
+              {showEvaluateButton && (
+                <button
+                  onClick={handlePopupWrongCode}
+                  disabled={!code}
+                  className={classnames(
+                    "mt-4 border-2 border-black z-10 rounded-md shadow-[5px_5px_0px_0px_rgba(0,0,0)] px-4 py-2 hover:shadow transition duration-200 bg-white flex-shrink-0",
+                    !code ? "opacity-50" : ""
+                  )}
+                >
+                  Evaluate AI
+                </button>
+              )}              
+              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"Hint for Wrong Code"}>
+                <p>{hintWrongCode}</p>
+              </Popup>
 
               <button
                 onClick={handleCompile}
@@ -546,10 +565,7 @@ const CodingRoute = () => {
                 )}
               >
                 {processing ? "Processing..." : "Run"}
-              </button>              
-              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"Hint for Wrong Code"}>
-                <p>{hintWrongCode}</p>
-              </Popup>
+              </button>
 
               {/* Button for comparing Test Cases with output */}
               <button

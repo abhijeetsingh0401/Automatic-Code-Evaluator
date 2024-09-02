@@ -42,7 +42,7 @@ const Dashboard = () => {
               }}
             >
             {/* <FontAwesomeIcon icon={faFlag} style={{ marginRight: '10px' }} /> */}
-            Independence Challenge
+            Coding  Challenge
           </button>
         </Link>
         )}

@@ -3,51 +3,74 @@ import { FaGithub, FaPython, FaRobot, FaRProject } from "react-icons/fa"; // Imp
 import { HiAdjustments } from "react-icons/hi";
 import { TbBoxModel } from "react-icons/tb";
 
+// const mockData = [
+//   {
+//     id: 1,
+//     icon: <FaPython className="text-blue-500 text-4xl" />,
+//     title: "Learn Python and Data Structure",
+//     description: "Master Python with interactive lessons and challenges.",
+//     tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgHj4a9CE1KLSarhkjocecO"
+//   },
+//   {
+//     id: 2,
+//     icon: <TbBoxModel className="text-yellow-500 text-4xl" />,
+//     title: "Neural Network form scratch",
+//     description: "Learn the fundamentals of NNFS and build NNFS from scratch.",
+//     tutorial:"https://flyvidesh.online/courses/nnfs-neural-network-from-scratch/"
+//   },
+//   {
+//     id: 3,
+//     icon: <HiAdjustments className="text-red-500 text-4xl" />,
+//     title: "Transformer",
+//     description: "Exploring Transformer Models Architecture.",
+//     tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSjs5Dz7FfPCzV3BKC7CtJU1"
+//   },
+//   {
+//     id: 4,
+//     icon: <FaRProject className="text-blue-500 text-4xl" />,
+//     title: "R MasterClass",
+//     description: "Take your R skills to the next level with .",
+//     tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSijzVRPXpKen9lM6ol1CTJe"
+//   },
+//   {
+//     id: 5,
+//     icon: <FaGithub className="text-black-500 text-4xl" />,
+//     title: "Git Github MasterClass",
+//     description: "Mastering Git and GitHub Fundamentals",
+//     tutorial:'https://flyvidesh.online/courses/github-masterclass/  '
+//   },
+//   {
+//     id: 6,
+//     icon: <FaRobot className="text-purple-500 text-4xl" />,
+//     title: "AI Research Bootcamp",
+//     description: "AI Research Bootcamp for beginners",
+//     tutorial:'https://www.youtube.com/playlist?list=PLPTV0NXA_ZSggVHqwnOq3rk9NeE1Fi8bx'
+//   },
+// ];
 const mockData = [
   {
     id: 1,
     icon: <FaPython className="text-blue-500 text-4xl" />,
-    title: "Learn Python and Data Structure",
-    description: "Master Python with interactive lessons and challenges.",
-    tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgHj4a9CE1KLSarhkjocecO"
+    title: "Max Consecutive Ones",
+    description: "Given a binary array calculate max ones 1",
+    tutorial:"https://automatic-code-evaluator-kohl.vercel.app/question/DataStructureAlgorithm/max_consecutive_ones"
   },
   {
     id: 2,
     icon: <TbBoxModel className="text-yellow-500 text-4xl" />,
-    title: "Neural Network form scratch",
-    description: "Learn the fundamentals of NNFS and build NNFS from scratch.",
-    tutorial:"https://flyvidesh.online/courses/nnfs-neural-network-from-scratch/"
+    title: "Minimal lexicographic rotation",
+    description: "Find the minimal lexicographic rotation of the string",
+    tutorial:"https://automatic-code-evaluator-kohl.vercel.app/question/DataStructureAlgorithm/minimal_lexicographic_rotation"
   },
   {
     id: 3,
     icon: <HiAdjustments className="text-red-500 text-4xl" />,
-    title: "Transformer",
-    description: "Exploring Transformer Models Architecture.",
-    tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSjs5Dz7FfPCzV3BKC7CtJU1"
+    title: "String Reformatting",
+    description: "Reformat  the string ",
+    tutorial:"https://automatic-code-evaluator-kohl.vercel.app/question/DataStructureAlgorithm/string_reformatting"
   },
-  {
-    id: 4,
-    icon: <FaRProject className="text-blue-500 text-4xl" />,
-    title: "R MasterClass",
-    description: "Take your R skills to the next level with .",
-    tutorial:"https://www.youtube.com/playlist?list=PLPTV0NXA_ZSijzVRPXpKen9lM6ol1CTJe"
-  },
-  {
-    id: 5,
-    icon: <FaGithub className="text-black-500 text-4xl" />,
-    title: "Git Github MasterClass",
-    description: "Mastering Git and GitHub Fundamentals",
-    tutorial:'https://flyvidesh.online/courses/github-masterclass/  '
-  },
-  {
-    id: 6,
-    icon: <FaRobot className="text-purple-500 text-4xl" />,
-    title: "AI Research Bootcamp",
-    description: "AI Research Bootcamp for beginners",
-    tutorial:'https://www.youtube.com/playlist?list=PLPTV0NXA_ZSggVHqwnOq3rk9NeE1Fi8bx'
-  },
-];
 
+];
 const CodingCards = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 md:mt-24 px-4 md:px-8">

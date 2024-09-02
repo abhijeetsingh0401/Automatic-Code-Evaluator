@@ -1,32 +1,32 @@
 [
     {
-      "code": "C1",
+      "code": "A1",
       "name": "Challenge One",
-      "start": "2024-08-20T10:00:00Z",
+      "start": "2024-09-2T10:00:00Z",
       "duration": "2 hours",
       "codingProblem": {
-        "name": "Prime Independence Day",
-        "link": "/question/7"
+        "name": "Max Consecutive Ones",
+        "link": "/question/DataStructureAlgorithm/max_consecutive_ones"
       }
     },
     {
-      "code": "C2",
+      "code": "A2",
       "name": "Challenge Two",
       "start": "2024-08-22T15:00:00Z",
       "duration": "1.5 hours",
       "codingProblem": {
-        "name": "Unique Independence Challenge",
-        "link": "/question/6"
+        "name": "Minimal lexicographic rotation",
+        "link": "/question/DataStructureAlgorithm/minimal_lexicographic_rotation"
       }
     },
     {
-      "code": "C3",
+      "code": "A3",
       "name": "Challenge Three",
       "start": "2024-08-25T12:00:00Z",
       "duration": "3 hours",
       "codingProblem": {
-        "name": "Independence Day Flag Challenge",
-        "link": "/question/9"
+        "name": "String Reformatting",
+        "link": "question/DataStructureAlgorithm/string_reformatting"
       }
     }
   ]

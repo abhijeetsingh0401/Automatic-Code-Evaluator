@@ -112,7 +112,7 @@ const Coding = () => {
     setHint("");
   };
 
-  // Hint for Wrong Code
+  // AI Feedback
   const handlePopupWrongCode = async () => {
     setWrongCodePopupOpen(true);
     setIsLoading(true);
@@ -530,7 +530,7 @@ const Coding = () => {
               !code ? "opacity-50" : ""
             )}
           >
-            Hint AI
+            Hint
           </button>
           <Link to="/compete">
             <button
@@ -546,7 +546,7 @@ const Coding = () => {
           </Link>        
         </div>        
       </div>
-      <Popup isOpen={isPopupOpen} onClose={closePopup} isLoading={isLoading} heading={"Hint AI"}>
+      <Popup isOpen={isPopupOpen} onClose={closePopup} isLoading={isLoading} heading={"Hint"}>
         <p>{hint}</p>
       </Popup>
 
@@ -579,10 +579,10 @@ const Coding = () => {
                     !code ? "opacity-50" : ""
                   )}
                 >
-                  Evaluate AI
+                  AI Feedback
                 </button>
               )}              
-              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"Hint for Wrong Code"}>
+              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"AI Feedback"}>
                 <p>{hintWrongCode}</p>
               </Popup>
 

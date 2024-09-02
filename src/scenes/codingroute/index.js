@@ -68,7 +68,7 @@ const CodingRoute = () => {
     setHint("");
   };
 
-  // Hint for Wrong Code
+  // AI Feedback
 
 
   const handlePopupWrongCode = async () => {
@@ -500,9 +500,9 @@ const CodingRoute = () => {
               !code ? "opacity-50" : ""
             )}
           >
-            Hint AI
+            Hint
           </button>}
-          <Link to="/compete">
+          {/* <Link to="/compete">
             <button
               onClick={handlePopup}
               disabled={!code}
@@ -513,10 +513,10 @@ const CodingRoute = () => {
             >
               Compete Dashboard            
             </button>
-          </Link>        
+          </Link>         */}
         </div>        
       </div>
-      <Popup isOpen={isPopupOpen} onClose={closePopup} isLoading={isLoading} heading={"Hint AI"}>
+      <Popup isOpen={isPopupOpen} onClose={closePopup} isLoading={isLoading} heading={"Hint"}>
         <p>{hint}</p>
       </Popup>
 
@@ -549,10 +549,10 @@ const CodingRoute = () => {
                     !code ? "opacity-50" : ""
                   )}
                 >
-                  Evaluate AI
+                  AI Feedback
                 </button>
               )}              
-              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"Hint for Wrong Code"}>
+              <Popup isOpen={isWrongCodePopupOpen} onClose={closeWrongCodePopup} isLoading={isLoading} heading={"AI Feedback"}>
                 <p>{hintWrongCode}</p>
               </Popup>
 

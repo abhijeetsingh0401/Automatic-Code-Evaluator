@@ -23,8 +23,9 @@ const LandingDashboard = () => {
       <main className="pt-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <Dashboard />
         <div className="flex flex-col items-center p-8 ">
-     
-      <h2 className="text-6xl font-bold text-gray-600 mb-8">Coding Challenge</h2>
+        <h2 className="text-6xl font-bold text-gray-600 mb-4 mt-4">Coding Challenge</h2>
+     <CodingCards/>
+      {/* <h2 className="text-6xl font-bold text-gray-600 mb-8">Coding Challenge</h2>
       <div className="overflow-x-auto w-full max-w-7xl">
         <table className="w-full bg-white border-collapse shadow-lg rounded-lg overflow-hidden">
           <thead className="bg-blue-500 text-white">
@@ -65,7 +66,7 @@ const LandingDashboard = () => {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> */}
     </div>
         {/* <CodingCards /> */}
         {/* Your other components go here */}

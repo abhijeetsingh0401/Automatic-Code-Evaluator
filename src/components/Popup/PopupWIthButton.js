@@ -35,12 +35,12 @@ const PopupWithButton = ({ isOpen, onClose, isLoading, children, heading, isButt
         </div>
         {isButton && ( // Show button only if isButton is true
           <div className="mt-4">
-            <button
+            {/* <button
               onClick={handleNavigate}
               className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-200 px-4 py-2 rounded"
             >
               Go to Leaderboard
-            </button>
+            </button> */}
           </div>
         )}
       </div>

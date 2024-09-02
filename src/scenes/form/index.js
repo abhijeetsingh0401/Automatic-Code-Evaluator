@@ -53,7 +53,7 @@ const Form = () => {
           }
         };
         await setDoc(subjectRef, updatedData);
-        setLink(`http://localhost:3000/edit/${subject}/${codingQuestion}`);
+        setLink(`https://automatic-code-evaluator-kohl.vercel.app/edit/${subject}/${codingQuestion}`);
       } else {
         // If 'CodingQuestion' document doesn't exist, create it
         await setDoc(subjectRef, {
@@ -65,7 +65,7 @@ const Form = () => {
             selectedLanguage: selectedLanguageIndex
           }
         });
-        setLink(`http://localhost:3000/question/${subject}/${codingQuestion}`);
+        setLink(`https://automatic-code-evaluator-kohl.vercel.app/question/${subject}/${codingQuestion}`);
       }
 
       setLoading(false);
